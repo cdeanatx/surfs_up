@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "WorkBash": {
+            "path": ["C:\\Users\\cdean\\git\\bin\\bash.exe"],
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "WorkBash",
+    "terminal.integrated.automationShell.windows": "WorkBash"
+}
