@@ -29,3 +29,10 @@ def welcome():
         /api/v1.0/tobs</br>
         /api/v1.0/temp/start/end</br>
         ''')
+
+@app.route('/api/v1.0/precipitation')
+
+def precipitaion():
+    prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
+    precipitaion = session.query(Measurement.date)
+    return
