@@ -1,12 +1,10 @@
-from flask import Flask
+from flask import Flask, jsonify
+import numpy as np
+import pandas as pd
+import datetime as dt
+import sqlalchemy
+from sqlalchemy.ext.automap import automap_base
+from sqlalchemy.orm import Session
+from sqlalchemy import create_engine, func
 
-app = Flask(__name__)
-@app.route('/')
-
-def hello_world():
-    return 'Hello World!'
-
-@app.route('/second')
-
-def second():
-    return f'1 + 1 = {1+1}'
+engine = create_engine('sqlite:///hawaii.sqlite')
